@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{{ category.name }}
+{% endblock %}
+
+{% block body %}
+	<h1>{{ category.name }}</h1>
+    <a href={{ path('category', {'category': category.name}) }}>
+        Retour
+    </a>
+    <p>
+        TODO: Add form to add new category
+    </p>
+{% endblock %}

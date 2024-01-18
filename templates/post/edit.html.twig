@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Modifier l'article : {{ post.title }}
+{% endblock %}
+
+{% block body %}
+    <h1>Modifier l'article : {{ post.title }}</h1>
+    <br>
+    {{ form(editForm) }}
+
+{% endblock %}

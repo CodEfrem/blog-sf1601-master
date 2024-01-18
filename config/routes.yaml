@@ -1,0 +1,13 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+post_edit:
+    path: /posts/{slug}/edit
+    controller: App\Controller\PostController::edit
+
+post_show:
+    path: /posts/{slug}
+    controller: App\Controller\PostController::show
